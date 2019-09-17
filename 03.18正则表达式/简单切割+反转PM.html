@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>切割+反转</title>
+ </head>
+ <body>
+     <script>
+          var str='no zuo no die'
+		  var substrs =str.split(' ')
+		  console.log(substrs)
+	//按空格切割开
+		  var chars =str.split('')
+	//此时为数组
+		  console.log(chars)
+		  chars.reverse()
+	//反转为数组函数
+		  console.log(chars)
+	//用空字符串无缝拼接
+		  str =chars.join('')
+		  console.log(str)
+	 </script>
+ </body>
+</html>

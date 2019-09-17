@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title></title>
+ </head>
+ <body>
+        <script>
+ //            var names=[
+ //             ["又是吃的","麻辣烫","真是一成不变"],
+//	          ["花甲面","特别是方便面","特别好吃"],
+//	          ["还有我","喜欢的","面食"],
+//        ]
+//    console.log(names[1][1]);
+//	console.log(names[2][1]);
+//	names[2][2]="渔粉";
+//	console.log(names);
+
+//作业：
+      function show(){
+		  var city=["浙江","上海","北京"];
+		  var names=[
+		    ["南方","空气好","我喜欢的"],
+			["北方","有雾霾","房价高"],
+			["人多","地方小","有钱"]
+		  ]
+	//提供一个弹出框，可以输入省份信息
+	      var input=prompt("输入省份浙沪京");
+    //查找输入省份名称，是否在数组中存在，即判断
+	//存在：获取省份下标，并到二维数组中获取对应城市信息
+	//不存在：给出提示
+	      var index=-1;//-1无意义，任何数字即可，为了保存下标
+		  for(var i=0;i<city.length;i++){
+			  if(city[i]==input){
+				  index=i;
+				  break;
+			  }
+		  }
+	//判断是否有输入的省份
+	      if(index==-1){
+			  alert("无查询结果");
+	  }else{
+		  alert(names[index]);
+	  }
+	  }
+	  show();
+		</script>
+ </body>
+</html>

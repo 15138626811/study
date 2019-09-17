@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title></title>
+ </head>
+ <body>
+       <script>
+//         var arr=["杨贵妃","王昭君","西施","貂蝉"];
+//		 arr["西游记"]="孙悟空";
+///		 arr["红楼梦"]="林黛玉";
+//		 for(var i in arr){
+//			 console.log(arr[i]);
+//		 }
+
+//冒泡排序
+     function Max(){
+		 var arr=[23,9,78,6,45];
+		 for (var i=1;i<arr.length;i++){
+			 for(var j=0;j<arr.length;j++){
+				  if(arr[j]>arr[j+1]){
+                     arr[j]^=arr[j+1];
+					 arr[j+1]^=arr[j];
+					 arr[j]^=arr[j+1];
+			 }
+		  }
+	   }
+		 console.log("排序后"+arr);
+	 }
+	   </script>
+	   <input type="button" value="冒泡排序" onclick="Max()">
+ </body>
+</html>

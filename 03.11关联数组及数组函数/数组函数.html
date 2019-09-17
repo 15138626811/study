@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title></title>
+ </head>
+ <body>
+       <script>
+//            function xxx(){
+//				var arr=["苏大强","苏明玉","苏明成","苏明哲"];
+//				console.log(typeof(arr));
+//				var str=arr.toString();		
+//			    console.log(typeof(str));
+//			}
+//			xxx();
+
+//            function sss(){
+//				var arr=["苏大强","苏明玉","苏明成","苏明哲"];
+//				var res=arr.join("#");
+//			    console.log(typeof(res));
+//			}
+//			sss();
+
+//方法一：
+			function aaaa(){
+				var arr=["*"];
+				for(var i=1;i<=5;i++){
+		//每进一次外循环，空数组就要清空一次
+		        var arr=[];
+		//空数组
+				for (var j=1;j<=i;j++){
+		//循环体
+		//往数组里面追加*，永远是从最新位置追加
+		        arr[arr.length]="*";
+		//arr.length=0代表清空数组，后台显示为--{}
+				}
+				console.log(arr.join(""));//.join("")可以连接字符串
+			}
+		}
+		aaaa();
+//方法二：
+        function tesT(){
+			for(var i=1,arr=[];i<=5;i++,arr.length=0){
+	//表达式一和表达式三可以写多个条件
+	        for(var j=1;j<=i;j++){
+				arr[arr.length]="*";
+			}
+			console.log(arr.join(""));
+			}
+		}
+		tesT();
+	   </script>
+	   
+ </body>
+</html>

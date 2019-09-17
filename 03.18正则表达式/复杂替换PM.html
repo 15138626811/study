@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title></title>
+ </head>
+ <body>
+    <script>
+        var str ='那天,我去了他家,我说:我草,你家真大,他想和我去草地野餐,我草草的收拾了草地,他说:我去去就来'
+		str =str.replace(	   
+		      /我[去草][去草]?/ig,
+			  function (kword){
+			  return kword.length==2?'**':'***'		  
+		   }
+		)
+		console.log(str)
+
+      var str ='明明喜欢我,却不告诉我,别理我,我想静静,静静是谁?你先告诉我明明是谁?'
+	  var kwords =str.match(/陈粒/g)
+	  str =str.replace(/陈粒/g,'**')
+	  console.log(str)
+	  console.log('替换'+(kwords!=null?kwords.length:0)+'处')
+	</script>
+ </body>
+</html>

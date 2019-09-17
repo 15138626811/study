@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title></title>
+ </head>
+ <body>
+       <script>
+           var msg ='今晚211, w84u!'
+//接受消息，转换为Unicode码
+	           function encode(msg){
+				   for(var i =0, code ='';i<msg.length;i++){
+//将当前字符转为Unicode码
+                      var uc=msg.charCodeAt(i)
+//					  if(uc<100) uc ='000'+uc
+//					  else if(uc<1000) uc ='00'+uc
+//					  code+=uc
+                 code+=(uc+100000+'').slice(1)
+			   }   
+			     return code
+	        }
+	      var code =encode(msg)
+		  console.log(code)
+
+//将Unicode码转为文字
+		  function decode(code){
+			      for(var i =0,msg ='';i<code.length;i+=5){
+				  msg+=String.fromCharCode(code.slice(i,i+5))
+		  }
+			     return msg
+	 }
+		  var msg2 =decode(code)
+		  console.log(msg2)
+	   </script>
+ </body>
+</html>

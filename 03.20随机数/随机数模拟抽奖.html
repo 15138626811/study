@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title></title>
+    <style>
+        #area{
+		width:280px;
+		height:80px;
+		line-height:50px;
+		text-align:center;
+		border:1px solid grey;
+		font-size:1.35em;
+		background-color:lightgray;
+		cursor:pointer;
+		}
+    </style>
+ </head>
+ <body>
+         <div id="area" onmouseout="out(this)" onmouseover="over(this)">
+            
+		 </div>
+    <script>
+         function over(div){
+			 div.style.background ='#003366'
+			 div.innerHTML =''
+		 }
+		 function out(div){
+			 div.style.background ='#fff'
+			 var r =Math.random()
+			 div.innerHTML =
+			        r<0.05?'一等奖:全球限量李萌惠一枚':
+					r<0.15?'二等奖:蓝牙耳机':
+					r<0.3?'三等奖:国产耳机':
+					            '参与奖:纸巾一包';
+		 }
+	</script>
+ </body>
+</html>
