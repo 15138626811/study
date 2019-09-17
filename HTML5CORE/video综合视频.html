@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title></title>  
+		<style type="text/css">
+			body{
+			    text-align: center;	
+			}
+			.container{
+				position: relative;
+			}
+			.ctrl{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -32px;
+				margin-top: -32px;
+			}
+			.ad{
+				position: absolute;
+				width: 800px;
+				height: 450px;
+				left: 500px;
+				top: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>视频播放</h3>
+		<div class="container">
+			<!--视频元素-->
+			<video width="800" height="450" id="v3" src="birds.mp4">
+				当前浏览器不支持 video直接播放，点击这里下载视频：
+			</video>
+			<!--广告-->
+				<img class="ad" src="1557385687.jpg"/>
+			<!--播放控制按钮-->
+			    <a href="#" class="ctrl">
+			    	<img src="play.png"/>
+			    </a>
+		</div>
+		<script type="text/javascript">
+			//1.获取最外层按钮的元素
+			var container=document.querySelector('.container')
+			//2.获取按钮
+			var ctrl=document.querySelector('.ctrl')
+			//3.获取广告
+			var ad=document.querySelector('.ad')
+			//4.获取视频元素
+			var v3=document.getElementById('v3')
+			//5.实现鼠标移入，显示按钮
+			
+			//获取播放暂停按钮
+			var ctrlImg=document.querySelector('.ctrlimg')
+			
+			container.onmouseover=function(){
+				ctrl.style.display='block'
+			}
+			// 鼠标移出，隐藏按钮
+			container.onmousemove=function(){
+				ctrl.style.display='none'
+			}
+			//6.获取按钮的点击事件
+			ctrl.onclick=function(){
+				//7.判断条件
+				if(v3.paused){//当处于暂停状态
+					//8.播放视频
+					v3.play()
+					//调整音量
+					v3.volume:0.3
+					ctrlImg.src="pause.png"
+				}else{
+				//9.暂停视频
+				v3.pause()
+				ctrlImg.src='play.png'
+				}
+				
+			}
+			//视频播放的时候，广告隐藏
+			//视频暂停的时候，广告显示
+			v3.onplay=function(){
+				ad.style.display='none'
+			}
+			v3.onpause=function(){
+				ad.style.display='block'
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,116 @@
+.{
+	padding: 0;
+	margin: 0;
+}
+#big{
+	border-bottom: 1px solid lightgrey;
+	width: 100%;
+}
+#our{
+	margin-top: 0.5em;
+	cursor: pointer;
+}
+#big-our{
+	border-left: 1px solid lightgrey;	
+}
+#pic{
+	margin-top: 0.5em;
+	border-left: 1px solid lightgrey;
+}
+#pic-control{
+	width: 56%;
+	margin-top: 1em;
+}
+#honor{
+	cursor: pointer;
+	opacity: 0;
+	margin-left: -4em;
+	font-size: 1.1em;
+}
+#honor:hover{
+	opacity: 1;
+}
+#brand{
+	width: 100%;
+	background-color: #104c97;
+	margin-top: 1em;
+}
+#brang-move{
+	margin-top: 1.5em;
+}
+#navr{
+	color: white;
+	font-size: 1.2em;
+	text-align: center;
+	margin-top: 1.5em;
+	cursor: pointer;
+}
+#biggest{
+	margin-top: 12em;
+	}
+#line{
+	width: 80%;
+}
+#now{
+	font-size: 2.5em;
+}
+#free{
+	width: 25%;
+	margin-top: 2.8em;
+}
+#hint{
+	font-size: 14px;
+}
+#from{
+	width: 70%;
+}
+.num_input{
+	height: 2.2em;
+}
+.num_select{
+	height: 1.8em;
+}
+#site{
+	margin-top: 1em;
+	margin-left: -1.7em;
+}
+#site1{
+	margin-top: 1em;
+}
+#svip{
+	margin-top: 1.5em;
+	text-align: left;
+	font-size: 1em;
+}
+#chunk{
+	margin-top: 6em;
+	font-size: 0.9em;
+	text-align: center;
+}
+#xlr{
+	width: 100%;
+	text-align:center;
+	opacity: 0.65;
+	cursor: pointer;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+#xlr:hover{
+	opacity: 0.85;
+}
+#global{
+	font-size: 0.7em;
+}
+#familiar li{
+	font-size: 0.9em;
+	opacity: 0.65;
+	cursor: pointer;
+	border-right: 0.05em solid rgba(0,0,0,0.65);
+	line-height: 1em;
+	padding-right: 1em;
+	text-decoration: underline;
+}
+#familiar li:hover{
+	opacity: 0.9;
+	text-decoration: none;
+}

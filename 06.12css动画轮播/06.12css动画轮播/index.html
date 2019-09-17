@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+			}
+			.container{
+				width: 100%;
+				height: 640px;
+				overflow: hidden;
+			}
+			.container ul{
+				width: 500%;
+				height: 640px;
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				/*animation-name: test;
+				animation-duration: 10s;
+				animation-iteration-count:10;
+			    animation-timing-function: linear;*/
+			   animation: test 8s linear infinite alternate;
+			}
+			.container ul li{
+				float: left;
+				width: 20%;
+				height: 640px;
+			}
+			@keyframes test{
+				0%,15%{
+					margin-left: 0%;
+				}
+				20%,35%{
+					margin-left: -100%;
+				}
+				40%,55%{
+					margin-left: -200%;
+				}
+				60%,75%{
+					margin-left: -300%;
+				}
+				80%,95%{
+					margin-left: -400%;
+				}
+				}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<ul>
+				<li><img src="img/15601507085681.jpg"/></li>
+				<li><img src="img/15601499546058.jpg"/></li>
+				<li><img src="img/15601500837832.jpg"/></li>
+				<li><img src="img/15601501327073.jpg"/></li>
+				<li><img src="img/15601502039724.jpg"/></li>
+			</ul>
+		</div>
+	</body>
+</html>

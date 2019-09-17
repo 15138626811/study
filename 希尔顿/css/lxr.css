@@ -1,0 +1,176 @@
+.{
+	padding: 0;
+	margin: 0;
+}
+.rxl{
+	font-size: 3.5em;
+	letter-spacing: 0.4em;
+	margin-left: 0.5em;
+	cursor: pointer;
+}
+.hote{
+	font-size: 0.75em;
+	letter-spacing: 0.17em;
+	margin-left: 2.2em;
+}
+#my-nav{
+	font-size: 1.5em;
+	margin-right: 2em;
+	margin-top: 2em;
+}
+#my-nav:hover{
+	cursor: pointer;
+	border-bottom: 1px solid black;
+}
+#cricle{
+	margin-top: 3em;
+	width: 100%;
+}
+#first{
+	margin-top: 4em;
+}
+#first-woman{
+	margin-top: 3.5em;
+}
+#pool{
+	font-family: "仿宋";
+	font-size: 3em;
+	color:#334e3a;
+}
+#pool-w{
+	font-family: "仿宋";
+	font-size: 2.8em;
+	color:#334e3a;
+}
+#pool-f{
+	font-family: "仿宋";
+	font-size: 1.4em;
+	line-height: 2em;	
+}
+#buto-un{
+	font-size: 2.9em;
+	font-family: "仿宋";
+	text-align: center;
+	color:#334e3a;
+}
+#buto-de{
+	margin-top: -0.5em;
+	font-size: 3.5em;
+	font-family: "仿宋";
+	text-align: center;
+	color:#334e3a;
+}
+#buto-po{
+	text-align: center;
+}
+#puto-lxr{
+	text-align: center;
+	font-size: 1.2em;
+	font-family: "仿宋";
+}
+/*.toor{
+	margin-top: 0.56em;
+	font-size: 2em;
+	font-family: "仿宋";
+	text-align: center;
+	color:#334e3a;
+}*/
+#found{
+	font-family: "仿宋";
+	font-size: 2.5em;
+	color:#334e3a;
+}
+#found-w{
+	font-family: "宋体";
+	font-size: 3em;
+	color:#334e3a;
+}
+#found-f{
+	font-family: "仿宋";
+	font-size: 1.4em;
+	line-height: 2em;	
+}
+#chunk{
+	margin-top: 2em;
+	border-color: #8b634b;
+}
+#chunk:hover{
+	background-color: #8b634b;
+	transition:background-color 1s;
+}
+#foot{
+	width: 100%;
+	height: 18em; 
+	background-color: #334e3a;
+	margin-top: 3em;
+}
+#room{
+	font-size: 1.05em;
+	color: white;
+	opacity: 0.5;
+}
+#room:hover{
+	cursor: pointer;
+	opacity: 0.85;
+}
+.last{
+	margin-top: 3em;
+}
+#room-web{
+	font-size: 1em;
+	color: white;
+	opacity: 0.2;
+}
+#room-web:hover{
+	cursor: pointer;
+	opacity: 0.65;
+}
+/*增加的内容↓*/
+/*.toor{
+	margin-top: 0.56em;
+	font-size: 2em;
+	font-family: "仿宋";
+	text-align: center;
+	color:#334e3a;
+}*/
+.pic{
+	width: 100%;
+	height: 32em;
+	overflow: hidden;
+}
+.toor{
+	width: 70%;
+	height: 44%;
+	margin-left: 15%;	
+	background: white;
+}
+.toor h2{
+	font-family: "仿宋";
+	text-align: center;
+	font-weight: normal;
+	padding-top: 1em;
+}
+.test p{
+	font-size: 1.3em;
+	font-family: "仿宋";
+	text-align: center;
+	padding: 0px 20px 20px 20px;
+}
+.test button{
+	width: 35%;
+	height: 3em;
+	border: 0.1em solid #8B634B;
+	margin-left: 32%;
+	color: #8b634b;
+	background: white;
+	font-size: 1em;
+	font-family: "微软雅黑";
+	letter-spacing: 0.3em;
+	border-radius: 0.3em;
+}
+.pic:hover .toor{
+	transform: translateY(-15em);
+	transition: all linear 1s;
+}
+
+

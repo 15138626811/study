@@ -1,0 +1,113 @@
+html5 新特性
+  (1)新的语义标签
+           结构标记：通过一组特殊的标记来完成的网页布局
+           目的：提升语义性
+     1）<header></header>
+     2)<nav></nav>
+     3)<section></section>
+     4)<article></article>
+     5)<aside></aside>
+     6)<footer></footer>
+  (2)增强型的表单
+     1）新的input type
+       H5：email number  color date month week url search
+     2)新的表单元素
+       H5：datalist  progress meter output
+      2.3)html5新特性：-——meter
+         meter：用于标示一个值
+                   不可接受状态（红色）
+                   可接受状态（黄色）
+                   非常优秀（绿色）
+          <meter></meter>
+          min:最小值
+          max:最大值
+          low:下限
+          high:上限
+          optimum:最佳值
+          value:当前值
+      2.4) html5的新特性——output
+          output：输出 ,语义标签，没有任何外观样式等同于span
+          <output></output>
+     3）表单元素新属性
+        H4：type  id  value name style readonly
+        H5：placehoder:占位符
+            autofocus：自动获取输入焦点
+            multiple：允许输入框中输入多个值，用逗号分开
+            form：用于把输入于放置在表单外部
+            required：不能为空
+            maxlength：字符串的最大长度
+            minlength：字符串的最小长度
+            max
+            min
+            pattern：指定的内容符合正则表达式
+  (3)音频和视频
+      视频：
+      <video >
+      <source src="x.mp4"></source>
+      <source src="x.org"></source>
+      <source src="x.webm"></source>
+              您的浏览器版本太低，请升级
+      </video>
+      
+        它本身是一个300*150的inline-block元素
+           成员属性：
+      autoplay：自动播放
+      controls:控件
+      muted:静音
+      loop:自动循环
+      poster:在播放第一帧之前广告
+      preload:预加载
+        1.auto:预加载一定时长的视频和元数据
+        2.metadata:仅预加载元数据（尺寸，时长，第一帧画面）
+        3.none:不加载任何内容
+        
+        #js对象属性
+        currentTime 当前播放时长
+        duration    总时长
+        paused:true  false  当前视频是否处于暂停状态
+        volume（0~1）                          音量
+        playbackRate    回放速率：大于1  快播   小于 1 慢放
+        #js成员方法
+        play（）                    播放视频
+        pause（）                暂停播放视频
+        #js事件                     
+        onplay       当视频开始播触发事件
+        onpause
+               练习：
+       1.不使用video自带控件，自定义播放暂停按钮
+       2.视频暂停的时候就显示广告，只要播放广告隐藏
+   3.2)音频播放
+       <audio>
+       <source src="X.pm4"></source>
+       <audio>
+      注意：
+      它是默认300*30的inline-block元素
+       成员属性：
+      autoplay：自动播放
+      controls:控件
+      muted:静音
+      loop:自动循环
+      poster:在播放第一帧之前广告
+      preload:预加载
+        1.auto:预加载一定时长的视频和元数据
+        2.metadata:仅预加载元数据（尺寸，时长，第一帧画面）
+        3.none:不加载任何内容
+        
+    #js对象属性
+        currentTime 当前播放时长
+        duration    总时长
+        paused:true  false  当前视频是否处于暂停状态
+        volume（0~1）                          音量
+        playbackRate    回放速率：大于1  快播   小于 1 慢放
+    #js成员方法
+        play（）                    播放视频
+        pause（）                暂停播放视频
+    #js事件                     
+        onplay       当视频开始播触发事件
+        onpause
+    
+  
+     
+     
+    
+

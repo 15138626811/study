@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		薪资:<meter min="0" low="2000" high="100000" optimum="10000" max="10000" value="0" id="p3"></meter>
+		<!--使用定时器+meter-->
+		<script type="text/javascript">
+		//1.获取刻度尺
+		   var p3=document.getElementById("p3")
+		//2.创建值变量
+		   var v=0
+		//3.创建一个定时器
+		   var timer=setInterval(function(){
+		//4.值变量+500
+		     v+=500
+		     p3.value=v
+		//5.判断是否结束
+		     if(v>10000){
+		       clearInterval(timer)
+		     }
+		   }, 500);
+		   
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
