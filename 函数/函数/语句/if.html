@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    var a = 10;
+       //小括号里面一定是true
+    //    if(a<20){
+    //        alert('yes');
+    //    }
+
+    //    if(a<10){
+    //        alert('yes');
+    //    }else{
+    //        alert('no');
+    //    }
+
+    //    if(a<60){
+    //        alert('D');
+    //    }else if(a>=60 && a<75){
+    //       alert('C');
+    //    }
+    //    else if(a>=75 && a<85){
+    //       alert('B');
+    //    }
+    //    else if(a>=85 && a<100){
+    //       alert('A');
+    //    }else{
+    //       alert('缺考');
+    //    }
+    
+       function show(){
+           var num = Number(prompt('输入年龄'));
+           if(num>=0 && num<=6){
+               alert('儿童');
+           }else if(num>=7 && num<=18){
+               alert('青年');
+           }else if(num>=19 && num<=60){
+               alert('中年');
+           }else if(num>=61 && num<=150){
+               alert('老年');
+           }else{
+               alert('完蛋了');
+           }
+       }
+       show();
+    </script>
+</body>
+</html>
