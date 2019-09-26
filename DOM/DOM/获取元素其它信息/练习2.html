@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+       /* .blue{
+           background-color: blue;
+       } */
+       img{
+           width: 300px;
+           border: 1px solid red;
+       }
+    </style>
+</head>
+<body>
+    <img src="1.jif.gif">
+    <br/>
+    <img src="1.jpg.jpg">
+    <script>
+        // document.body.innerHTML = '<ul><li>1</li><li>2</li><li>3</li></ul>';
+        // document.getElementsByTagName('li')[1].setAttribute('class','blue');
+        var imgs = document.getElementsByTagName('img');
+        var img1s = imgs[0].getAttribute('src');
+        var img2s = imgs[1].getAttribute('src');
+    </script>
+</body>
+</html>

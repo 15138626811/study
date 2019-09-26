@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mydiv"></div>
+    <b id="b" style="font-size: 66px">加粗</b>
+    <script>
+      var div = document.getElementById('mydiv');
+      console.log(div.tagName);
+
+      //更改粗体
+      var b = document.getElementById('b');
+      console.log(b.tagName);
+      //H1||H2||H3...||H6||B||strong
+      //if可以省略 加if为方法一:方案更全面考虑
+      //无if为方法二:无论你是什么字体,都要变成斜体
+      //if(b.tagName == 'B' || b.tagName == h1){
+        b.style.fontWeight = 400;
+      //}
+
+      //方法三
+       var arr = ['H1','H2','H3','H4','H5','H6','B','SYRONG'];
+    //    console.log(arr.indexOf('B'));
+    //检测数组里是否有粗体的标签名,返回-1以外的都是粗体
+       var aa = arr.indexOf(b.tagName);
+       console.log(aa);
+       if(aa != -1){
+        b.style.fontWeight = 400;
+        b.style.color = 'red';
+       }
+    </script>
+</body>
+</html>

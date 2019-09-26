@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+        .a{
+            width: 200px;
+            height: 200px;
+        }
+        .b{
+            background-color: red;
+        }
+        
+        .c{
+            border-radius: 20%;
+        }
+        .d{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv" class="a">获取元素类名</div>
+    <script>
+        var div = document.getElementById('mydiv');
+        console.log(div.className);
+
+        div.className = 'd a c';
+        console.log(div.className);
+    </script>
+</body>
+</html>

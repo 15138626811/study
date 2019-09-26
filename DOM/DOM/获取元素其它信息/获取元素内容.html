@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mydiv">
+        董石锋
+        <p id="p">
+            把董石锋改过来
+        </p>
+    </div>
+    <script>
+       var div = document.getElementById('mydiv');
+       console.log(div);
+       console.log(div.innerHTML);
+       //↓这个可以更改div页面内容
+       //div.innerHTML = '你好';
+
+       var p = document.getElementById('p');
+       console.log(p);
+       console.log(p.innerHTML);
+    </script>
+</body>
+</html>

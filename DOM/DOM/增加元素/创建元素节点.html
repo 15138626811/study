@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    <h1 id="la">创建标签</h1>
+    <ul id="hi"></ul>
+    <script>
+       //用一个变量承接在文档中'创建'的一个元素
+       var div = document.createElement('div');
+       //将已经创建的元素放在想放的位置上
+       document.body.appendChild(div);
+
+       var b = document.getElementById('la');
+       var a = document.createElement('p');
+       b.appendChild(a);
+
+       var c = document.getElementById('hi');
+    //    var d = document.createElement('li');
+    //    c.appendChild(d);
+       for(var i=0;i<10;i++){
+        var d = document.createElement('li');
+        c.appendChild(d);
+       }
+    </script>
+</body>
+</html>

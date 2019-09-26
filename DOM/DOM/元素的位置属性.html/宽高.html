@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 100px auto;
+        border: 1px solid blue;
+    }
+    </style>
+</head>
+<body>
+    <div id="mydiv"></div>
+    <script>
+       var mydiv = document.getElementById('mydiv');
+       console.log(mydiv.style);//这种方法无法拿到属性样式
+       console.log(mydiv.offsetWidth);
+       console.log(mydiv.offsetHeight);
+       console.log(mydiv.clientHeight);
+    </script>
+</body>
+</html>

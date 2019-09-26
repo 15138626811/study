@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+	</head>
+	<body>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<script>
+			var mdiv = document.getElementsByTagName("div");
+			for(var i=0;i<mdiv.length;i++){
+				mdiv[i].style.height="50px";
+				mdiv[i].style.width="50px";
+				mdiv[i].style.backgroundColor="red";
+				mdiv[i].style.marginLeft="20px";
+				mdiv[i].style.display="inline-block";
+			}
+			mdiv[2].style.backgroundColor="blue";
+		</script>
+	</body>
+</html>
