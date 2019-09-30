@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单内容提示</title>
+    <style>
+        label{
+            position: absolute;
+            top: 32px;
+            left: 67px;
+            font-size: 15px;
+        }
+        .hide {
+            display: none;
+        }
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    样式1：<input type="text" id="inp1" value="样式1"><br>
+</body>
+</html>
+<script>
+    //获取事件源和相关元素
+    var inp1 = document.getElementById("inp1");
+    inp1.onfocus = function () {
+        if(this.value==="样式1"){
+            inp1.value = "";
+        }
+    }
+    //当表单失去焦点时，如果值为空，则值恢复默认值
+    inp1.onblur = function () {
+        if(this.value===""){
+            inp1.value="样式1";
+        }
+    }
+</script>

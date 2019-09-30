@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mydiv" style="width:300px;height: 300px;">
+        <img src="1.png">
+    </div>
+    <script>
+       var mydiv = document.getElementById('mydiv');
+       mydiv.addEventListener('click',a,false);
+       function a(){
+             mydiv.style.backgroundColor = 'rgb(0,0,0,0.6)';
+         }
+       mydiv.addEventListener('dblclick',b,false);
+       function b(){
+             mydiv.style.backgroundColor = 'yellow';
+         }
+    </script>
+</body>
+</html>
