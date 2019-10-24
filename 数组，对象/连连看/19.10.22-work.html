@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+   #box{
+       overflow: hidden;
+       position: relative;
+       width:100%;
+       height:900px;
+   }
+   #box > div{
+       width: 60px;
+       height:60px;
+       border:1px solid rgb(231, 151, 182);
+       border-radius: 15px;
+       position: absolute;
+       /* font-size:40px; */
+       text-align: center;
+       line-height: 60px;
+       background-image: url();
+       background-size: cover;
+       /* background-color: rgb(206, 223, 145); */
+   }
+   .active{
+       background-color:rgb(230, 150, 206) ;
+   }
+</style>
+<body>
+    <div id="box">
+    </div>
+    <script>
+        var arr=[
+            [1,5,3,2,0,4],//第0行
+            [3,2,1,4,0,5],//第1行
+            [4,1,2,0,3,5],//第2
+            [2,5,4,3,0,1],//第3
+            [2,3,0,4,1,5],
+            [2,3,5,0,4,1],
+        ]
+        // 给一个空数组 用于储存数据
+        var narr = [];
+        var box = document.getElementById('box');
+        for(var i=0;i<6;i++){
+            for(var j=0;j<6;j++){
+                var divs = document.createElement('div');
+                box.appendChild(divs);
+                divs.style.top=(i*60)+'px';
+                divs.style.left=(j*60)+'px';
+                //设置属性
+                divs.setAttribute("s",arr[i][j]);
+                // divs.innerHTML=arr[i][j]; //在页面上显示  arr[行][列]
+                divs.style.backgroundImage='url('+arr[i][j]+'.jpg)';
+                divs.onclick=function(){
+                    //narr只能存两个
+                    if(narr.length<2){
+                      //点击两次 弹出已选过
+                        if(this.className=='active'){
+                            alert('已选过,请重新选择');
+                        }else{
+                            narr.push(Number(this.getAttribute("s")));
+                            this.className='active';
+                        }
+                    }else{
+                      //清除
+                       narr=[];
+                       var ss = box.querySelectorAll('#box>div');
+                       for(var z=0;z<ss.length;z++){
+                        ss[z].className='';
+                       }
+                       //清除之后 -> 第三次点击 存进去
+                       narr.push(Number(this.getAttribute("s")));
+                       this.className='active';
+                    }
+                    if(narr.length==2){
+                        // console.log(narr[0]-narr[1]);
+                        if(narr[0]-narr[1]==0){
+                            var ww =  box.querySelectorAll('.active');
+                            for(var e=0;e<ww.length;e++){
+                                // ww[e].style.backgroundColor='black';
+                                //如果图片相同的话 就清空图片和背景颜色 
+                                ww[e].style.backgroundImage='';
+                                ww[e].className='';
+                                ww[e].onclick=null;
+                            }
+                        }
+                    }
+                    console.log(narr);
+
+                // alert(this.innerHTML);  //点击  弹出页面上格子中的内容
+                // alert(typeof this.innerHTML);  //点击 -> typeof(判断类型) -> 弹出页面上格子中的内容的类型为string.
+                // 之后在push里添加Number  把string转化为数字类型.
+                // narr.push(Number(this.innerHTML));
+
+                }
+            }
+        }
+       
+    </script>
+</body>
+</html>

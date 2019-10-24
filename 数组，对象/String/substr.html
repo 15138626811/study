@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#pic2{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="pic1">
+			<img src="img/m-0.png" id="com1"/>
+		</div>
+		<div id="pic2">
+			<img src="img/m-1.png" id="com2"/>
+		</div>
+		<script>
+			var pic1 = document.getElementById('pic1')
+			var pic2 = document.getElementById('pic2')
+			var com1 = document.getElementById('com1')
+			var com2 = document.getElementById('com2')
+			var sum = com1.getAttribute('src');
+			var b = sum.substr(0,7)
+            console.log(b)
+			pic1.onclick = function(){
+//				pic2.style.display = 'block'
+                var a = 'img/m-'
+                var c = '.png'
+                var b = sum.substr(0,7)
+                console.log(b)
+                if(b == 'img/m-0'){
+                	pic2.style.display = 'block'
+                }
+			}
+			
+			
+			
+//			var str = 'nihao,tom'
+//			console.log(str.substr(0,4))
+			//起始位置,截取字符数
+//			console.log(str.substr(-5,4))
+			//倒数第几个,向后截取字符数
+			
+		</script>
+	</body>
+</html>

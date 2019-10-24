@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul id="myul"></ul>
+		<script>
+			var ul =document.getElementById('myul')
+			var arr = ['tom','jack','jim','ccc','ddd'];
+			//a:值   b:索引   c:数组本身
+			arr.forEach(function(a,b,c){
+				console.log(a)
+				var li = document.createElement('li')
+			    li.innerHTML = b + 1 + ' : ' + a
+			    ul.appendChild(li)
+			})
+		</script>
+	</body>
+</html>

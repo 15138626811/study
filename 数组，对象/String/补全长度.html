@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="in1" />
+		<button id="bu1">点击</button>
+		<script>
+//			var str = '12'
+//			var nstr = str.padEnd(6,'0')
+//			var nnstr = str.padStart(6,'0')
+//			console.log(nstr)
+//			console.log(nnstr)
+			var in1 = document.getElementById('in1')
+			var bu1 = document.getElementById('bu1')
+			bu1.onclick = function(){
+//				var a = /^[a-zA-Z]{2}\d{8}$/
+				if(in1.value.length == 8){
+					alert('登录成功')
+				}else if(in1.value.length != 8){
+					alert(in1.value.padEnd(8,'0'))
+				}
+			}
+		</script>
+	</body>
+</html>

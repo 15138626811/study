@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var arr = ['ni','hao','我','爱你','中国']
+			var arr2 = [17,2,36,74,105,5556]
+//			var str = arr.
+			console.log(arr.indexOf('ni'))//0
+			console.log(arr.lastIndexOf('中国'))//4
+			
+			arr.forEach(function(a,b,c){
+				console.log(a)//ni hao 我 爱你 中国
+				console.log(b)//0 1 2 3 4
+				console.log(c)//(5)["ni", "hao", "我", "爱你", "中国"]
+			})
+			
+			var arr1 = arr.map(function(a,b,c){
+				return a+1
+			})
+			console.log(arr1)// (5)["ni1", "hao1", "我1", "爱你1", "中国1"]
+			
+			arr.every(function(a,b,c){
+				console.log(a)//ni
+				console.log(b)//0
+				console.log(c)// (5)["ni1", "hao1", "我1", "爱你1", "中国1"]
+			})
+			
+			arr.some(function(a,b,c){ 
+			    console.log(a)
+				console.log(b)
+				console.log(c)
+			})
+			
+			console.log(arr.reverse())// ["中国", "爱你", "我", "hao", "ni"]
+			
+			console.log(arr2.sort())// [105, 17, 2, 36, 5556, 74]
+			
+			console.log(arr.concat(arr2))// ["中国", "爱你", "我", "hao", "ni", 105, 17, 2, 36, 5556, 74]
+			
+			console.log(arr.join('、'))//中国、爱你、我、hao、ni
+			
+			console.log(arr.slice(0,3))//["中国", "爱你", "我"]
+			
+			console.log(arr.splice(0))//[]
+			
+			console.log(arr.splice(0,4))//["中国", "爱你", "我", "hao"]
+			
+			console.log(arr.splice(1,1,'haha'))//"ni", "haha", "我", "爱你", "中国"
+		</script>
+	</body>
+</html>

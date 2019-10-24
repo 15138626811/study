@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			//一个字符串存储数值
+			var arr = "雷雷，二蒙，华洁，郑直，帅杰，丛建，高天，庆圣，鸿翔，恒源，宇航";
+			//将字符串分隔分别存储在narr数组中
+			var narr = arr.split("，");
+			//创建一个ul标签
+			var ul = document.createElement("ul");
+			//将ul标签插入到body里面
+			document.body.appendChild(ul);
+			//循环遍历narr数组中的每一个数值
+			for(var i=0;i<narr.length;i++){
+				//动态创建一个li列表
+				var li = document.createElement("li");
+				//li列表中添加内容
+				li.innerHTML=narr[i];
+				//将li列表插入到ul中
+				ul.appendChild(li);
+			}
+		</script>
+	</body>
+</html>

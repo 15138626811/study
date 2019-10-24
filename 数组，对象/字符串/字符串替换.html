@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#dv{
+				width: 500px;
+				height: 900px;
+				margin: 0 auto;
+				border: 1px solid red;
+				position: relative;
+			}
+			#in1{
+				position: absolute;
+				bottom: 0px;
+				width: 200px;
+				height: 30px;
+				padding-left: 25px;
+				border: 1px solid black;
+			}
+			#bu1{
+				position: absolute;
+				bottom: 0px;
+				margin-left: 240px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="dv">
+			<input type="text" id="in1"/>
+			<button id="bu1">点击</button>
+		</div>
+		<script>
+//			var str = 'nihaonihao'
+//			var nstr = str.replace(/hao/,'❤❤❤')
+//			console.log(nstr)
+            var dv = document.getElementById('dv')
+            var in1 = document.getElementById('in1')
+            var bu1 = document.getElementById('bu1')
+            bu1.onclick = function(){
+            	dv.innerHTML = in1.value
+            	if(in1.value = '狗'){
+            		dv.innerHTML = (in1.value.replace(/狗/,'*'))
+            	}
+            }
+		</script>
+	</body>
+</html>
